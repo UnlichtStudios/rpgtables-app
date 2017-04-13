@@ -1,0 +1,24 @@
+/* Colors */
+$slate-gray: #222;
+
+
+h1 {
+  padding-top: 25px;
+  color: gray;
+}
+
+h2 {
+  padding: 3px;
+  color: #0F0;
+}
+
+div.row b {
+  margin: auto;
+  background-color: red;
+  color: black;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  &:hover {
+    color: #0F0;
+  }
+}

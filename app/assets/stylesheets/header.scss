@@ -2,19 +2,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-  font-family: 'Cuprum', sans-serif;
-  color: red;
-  background-color: black;
-  margin: 0px;
-  padding: 0px;
+
+/* Colors */
+$slate-gray: #222;
+
+/* Universal */
+html {
+  font-size: 7px;
 }
+
+/* Header */
 
 header {
-  background-color: #222;
+  background-color: $slate-gray;
 }
 
-/* Responsive Display */
 @media only screen and (max-width: 320px) {
   header {
     height: 85px;
@@ -23,12 +25,12 @@ header {
       margin: 0px;
       text-align: center;
       vertical-align: middle;
-      font-size: 42px;
+      font-size: 6rem;
       letter-spacing: -1px;
       padding-top: 4px;
       div {
         color: red;
-        font-size: 21px;
+        font-size: 3rem;
         text-align: left;
         padding-left: 10px;
         padding-top: 0px;
@@ -57,7 +59,7 @@ header {
               float: right;
             }
             .dropdown {
-              background-color: #222;
+              background-color: $slate-gray;
             }
             .divider {
               background-color: darkgreen;
