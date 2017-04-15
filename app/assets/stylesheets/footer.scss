@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Orbitron');
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Color */
+$slate-gray: #222;
+
+@media only screen and (min-width : 320px) {
+  footer {
+    background-color: $slate-gray;
+    height: auto;
+    div.row {
+      font-size: 1.5rem;
+      position: relative;
+    }
+    div#copyright {
+      display: inline-block;
+      position: absolute;
+      bottom: 16px;
+      left: 65px;
+    }
+    ul {
+      display:inline-block;
+      font-size: 0.6em;
+      margin: 0px;
+      list-style-type: none;
+      padding: 0px;
+      width: 82px;
+      &:first-child {
+        height: 31px;
+      }
+    }
+    img {
+      padding: 0px 5px 8px 5px;
+      width: 25%;
+    }
+    nav b.btn {
+      color: red;
+      background-color: transparent;
+    }
+    nav {
+      display: inline;
+      position: absolute;
+      bottom: 7px;
+      right: 11px;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large Devices, Wide Screns */
+@media only screen and (min-width: 1200px) {
+
+}

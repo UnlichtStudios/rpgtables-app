@@ -15,17 +15,17 @@
  */
 
  @import url('https://fonts.googleapis.com/css?family=Cuprum|Orbitron');
- @import "bootstrap-sprockets";
- @import "bootstrap";
-
- /* Colors */
- $slate-gray: #222;
 
  /* Universal */
 
  html {
    font-size: 7px;
  }
+
+ html, body {
+   height: 100%;
+ }
+
 
  body {
    font-family: 'Cuprum', sans-serif;
