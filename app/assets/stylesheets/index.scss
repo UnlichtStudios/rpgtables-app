@@ -35,3 +35,9 @@ div.row b {
     overflow: hidden;
   }
 }
+
+@media only screen and (min-width: 480px) {
+  div.row b.mainBtn {
+    margin-bottom: 10px;
+  }
+}

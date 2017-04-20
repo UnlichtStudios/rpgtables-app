@@ -1,6 +1,15 @@
 
-window.onload = function () {
+$(document).on('turbolinks:load', function () {
   // Breakpoint for using menu hamburger or buttons
+  processNavmenu();
+})
+
+$(window).resize(function() {
+  // Breakpoint for using menu hamburger or buttons
+  processNavmenu();
+})
+
+function processNavmenu() {
   if ($(document).width() >= 480) {
     hideDropdown();
     showNavbtns();
@@ -9,20 +18,8 @@ window.onload = function () {
     hideNavbtns();
   }
 }
-
-$(window).resize(function() {
-  // Breakpoint for using menu hamburger or buttons
-  if ($(document).width() >= 480) {
-    hideDropdown();
-    showNavbtns();
-  } else {
-    showDropdown();
-    hideNavbtns();
-  }
-})
-
 function hideDropdown() {
-  $("li").hide();
+  $("li.dropdown").hide();
 }
 
 function hideNavbtns() {
@@ -30,7 +27,7 @@ function hideNavbtns() {
 }
 
 function showDropdown() {
-  $("li").show();
+  $("li.dropdown").show();
 }
 
 function showNavbtns() {
